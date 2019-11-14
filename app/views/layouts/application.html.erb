@@ -11,6 +11,26 @@
   </head>
 
   <body>
+
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <a class="navbar-brand" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEX///8AAAAVFRXt7e37+/uSkpKVlZWRkZGOjo5aWlpkZGRhYWFeXl5WVlaamppmZmYMDAzioVYxAAADS0lEQVR4nO2d227bMBBEVaexc0/+/2sLliAcFRKvS+5MOuc1MqCDmSXXL87266ezeb/AdGTIjwz5kSE/MuRHhvzIkB8Z8iNDfmTIjwz5kSE//4HhR/7vrxs6r3mBj2275p949jYo8Jx//Wt4pqCInWIhwWt86sarWBC8pecKKb57OmR5r0owUFB883PI8lYtWFR88XLI8tIgWJxFxBQLCd7+fZ5uFutnMEF2adRdE3uoZrFtBhOP+U8hbTeFTebx7HM0l0bLNbGHpKh9FY1QLHC1q9oxBJdG+zWxB/7S6Lkm9oDP4sgMJqAXuNZV7Rjgb/013+hrgC2qRUUjhe3GS7EgeLrJHAG5wPWuascALnD9q9oxBcXP36v5NBYsXhpfl7V85V+n8ppoShGKjgS5FDsFiycqDI2n6HcKswhC1wwmGIraXVEWxUFB/KIOVTSCfdwMHDJ3kIs6XFF0RSNB3Fk0mMEEZopmCaIqmgoinqgmp+h30GbRcAYTWEU1riie4hRBpKJOqGgE5bgxP2TuYBR1UkUjCClOTDDgP4vTZjDhneLkBAO+szh1BhOeRZ1eUW/FRYJ+RV1S0YjPcbPgkLnz5CD4tFLQI8WlCXooLhdcregguHYWF89gYl2KLgmuVHQTXLXdLNtkjliRomOCaxSdBecrugvOvjScrok9M1MESDAwTxFEcJ4ijOCsWYSYwcSMFIESDNgrggnaFxWqohHbFOESDFgqQgpaKoIK2s0i4AwmbFKETTBgoQgtaPGt3/UbfQ2jswg8g4mxooJXNDKiSCE4UlSCikZ6UyRJMNCnSCTYp0gl2DOLNDOYaE2RLMFAmyKhYFtR6Soaqd9R4XfRM2qLSlnRSJ0isWDdLJLOYKI8i7QzmCgVlbqikXyK9AkGcrNIPoOJ86L+gIr+5eFyInh58H41I2TIjwz5kSE/MuRHhvzIkB8Z8iNDfmTIjwz5kSE/MuRHhvzIkB8Z8iNDfmTIjwz5kSE/MuRHhvzIkB8Z8iNDfmTIjwz5kSE/MuRHhvzIkB8Z8iNDfmTIjwz5kSE/MuRHhgh4/AOrMpY/G+L9Tw+PsfzdEBn6IEMZytAfGcpQhv7IUIYy9EeGMpShPzKUoQz9kWHkD6JoW05nMDb/AAAAAElFTkSuQmCC" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <%= link_to 'Add a new cocktail', new_cocktail_path, class: 'nav-link btn btn-danger'%>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
     <%= yield %>
   <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
   <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
